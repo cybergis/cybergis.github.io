@@ -62,7 +62,9 @@
 
         //var layer = new FeatureLayer({url: "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/states_update/FeatureServer/0", outFields: ["*"]});
         //var layer = new FeatureLayer({url: "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/nyt_states_data/FeatureServer/0", outFields: ["*"]});
-        var layer = new FeatureLayer({url: "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/nyt_counties_data/FeatureServer/0", outFields: ["*"]});
+        var layer = new FeatureLayer({url: "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/nyt_counties_data/FeatureServer/0",
+            outFields: ["*"],
+        "title": ""});
         var map = new Map({
           basemap: {
             portalItem: {
@@ -478,7 +480,10 @@
                     color: "#000000",
                     label: "No Case"
                   },
-                ]
+                ],
+                  // legendOptions: {
+                  // showLegend: true,
+                  // title: "Legend"}
               }
             ]
           };
